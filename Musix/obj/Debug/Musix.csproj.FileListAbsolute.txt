@@ -1,0 +1,10 @@
+D:\_root\programming\uni\MusiX\Musix\Musix\bin\Debug\Musix.exe.config
+D:\_root\programming\uni\MusiX\Musix\Musix\bin\Debug\Musix.exe
+D:\_root\programming\uni\MusiX\Musix\Musix\bin\Debug\Musix.pdb
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.csprojAssemblyReference.cache
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.Form1.resources
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.Properties.Resources.resources
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.csproj.GenerateResource.cache
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.csproj.CoreCompileInputs.cache
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.exe
+D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.pdb
