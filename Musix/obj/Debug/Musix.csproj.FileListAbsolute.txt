@@ -8,3 +8,13 @@ D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.csproj.GenerateResour
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.csproj.CoreCompileInputs.cache
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.exe
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.pdb
+C:\Users\lelaptop\Source\Repos\PSI\Musix\bin\Debug\Musix.exe.config
+C:\Users\lelaptop\Source\Repos\PSI\Musix\bin\Debug\Musix.exe
+C:\Users\lelaptop\Source\Repos\PSI\Musix\bin\Debug\Musix.pdb
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.csprojAssemblyReference.cache
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.Form1.resources
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.Properties.Resources.resources
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.csproj.GenerateResource.cache
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.csproj.CoreCompileInputs.cache
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.exe
+C:\Users\lelaptop\Source\Repos\PSI\Musix\obj\Debug\Musix.pdb
