@@ -62,6 +62,8 @@
             this.TracksListBox = new System.Windows.Forms.ListBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,7 +145,7 @@
             this.PlaylistsListBox.ItemHeight = 25;
             this.PlaylistsListBox.Location = new System.Drawing.Point(19, 77);
             this.PlaylistsListBox.Name = "PlaylistsListBox";
-            this.PlaylistsListBox.Size = new System.Drawing.Size(271, 354);
+            this.PlaylistsListBox.Size = new System.Drawing.Size(271, 304);
             this.PlaylistsListBox.TabIndex = 7;
             // 
             // label1
@@ -353,12 +355,32 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(19, 387);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(117, 46);
+            this.button7.TabIndex = 32;
+            this.button7.Text = "New ";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(173, 387);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(117, 46);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "Remove";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1006, 580);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.TracksListBox);
@@ -432,6 +454,8 @@
         private System.Windows.Forms.ListBox TracksListBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
