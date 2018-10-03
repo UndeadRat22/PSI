@@ -38,7 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.TracksListBox = new System.Windows.Forms.ListBox();
+            this.PlaylistsListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -59,6 +59,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.TracksListBox = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +73,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(751, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1006, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,19 +91,19 @@
             this.newToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.playlistsToolStripMenuItem.Name = "playlistsToolStripMenuItem";
-            this.playlistsToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.playlistsToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
             this.playlistsToolStripMenuItem.Text = "Playlists";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(164, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
             this.newToolStripMenuItem.Text = "New";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(164, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // imageList1
@@ -127,34 +130,34 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(656, 450);
+            this.button1.Location = new System.Drawing.Point(649, 449);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 46);
             this.button1.TabIndex = 6;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // TracksListBox
+            // PlaylistsListBox
             // 
-            this.TracksListBox.FormattingEnabled = true;
-            this.TracksListBox.ItemHeight = 25;
-            this.TracksListBox.Location = new System.Drawing.Point(19, 77);
-            this.TracksListBox.Name = "TracksListBox";
-            this.TracksListBox.Size = new System.Drawing.Size(381, 354);
-            this.TracksListBox.TabIndex = 7;
+            this.PlaylistsListBox.FormattingEnabled = true;
+            this.PlaylistsListBox.ItemHeight = 25;
+            this.PlaylistsListBox.Location = new System.Drawing.Point(19, 77);
+            this.PlaylistsListBox.Name = "PlaylistsListBox";
+            this.PlaylistsListBox.Size = new System.Drawing.Size(271, 354);
+            this.PlaylistsListBox.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 40);
+            this.label1.Location = new System.Drawing.Point(19, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.Size = new System.Drawing.Size(92, 25);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Added Tracks";
+            this.label1.Text = "Playlists";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(407, 77);
+            this.button2.Location = new System.Drawing.Point(643, 77);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 42);
             this.button2.TabIndex = 9;
@@ -163,7 +166,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(479, 77);
+            this.button3.Location = new System.Drawing.Point(715, 77);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 42);
             this.button3.TabIndex = 10;
@@ -173,7 +176,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(408, 126);
+            this.label2.Location = new System.Drawing.Point(644, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 25);
             this.label2.TabIndex = 11;
@@ -182,7 +185,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(413, 156);
+            this.label4.Location = new System.Drawing.Point(649, 156);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 12;
@@ -191,7 +194,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(484, 156);
+            this.label5.Location = new System.Drawing.Point(720, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 25);
             this.label5.TabIndex = 13;
@@ -200,7 +203,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(484, 182);
+            this.label6.Location = new System.Drawing.Point(720, 182);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 25);
             this.label6.TabIndex = 15;
@@ -209,7 +212,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(413, 182);
+            this.label7.Location = new System.Drawing.Point(649, 182);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 25);
             this.label7.TabIndex = 14;
@@ -218,7 +221,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(484, 208);
+            this.label8.Location = new System.Drawing.Point(720, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 25);
             this.label8.TabIndex = 17;
@@ -227,7 +230,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(413, 208);
+            this.label9.Location = new System.Drawing.Point(649, 208);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 25);
             this.label9.TabIndex = 16;
@@ -236,7 +239,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(484, 234);
+            this.label10.Location = new System.Drawing.Point(720, 234);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 25);
             this.label10.TabIndex = 19;
@@ -245,7 +248,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(413, 234);
+            this.label11.Location = new System.Drawing.Point(649, 234);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 25);
             this.label11.TabIndex = 18;
@@ -253,7 +256,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(413, 264);
+            this.button4.Location = new System.Drawing.Point(649, 264);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(117, 46);
             this.button4.TabIndex = 20;
@@ -263,7 +266,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(418, 402);
+            this.checkBox1.Location = new System.Drawing.Point(751, 456);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(243, 29);
             this.checkBox1.TabIndex = 21;
@@ -321,12 +324,44 @@
             this.label14.TabIndex = 28;
             this.label14.Text = "Please login to sync with server";
             // 
+            // TracksListBox
+            // 
+            this.TracksListBox.FormattingEnabled = true;
+            this.TracksListBox.ItemHeight = 25;
+            this.TracksListBox.Location = new System.Drawing.Point(323, 77);
+            this.TracksListBox.Name = "TracksListBox";
+            this.TracksListBox.Size = new System.Drawing.Size(288, 354);
+            this.TracksListBox.TabIndex = 29;
+            this.TracksListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(318, 40);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(77, 25);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Tracks";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(649, 316);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(117, 46);
+            this.button6.TabIndex = 31;
+            this.button6.Text = "Remove";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(751, 580);
+            this.ClientSize = new System.Drawing.Size(1006, 580);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.TracksListBox);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label13);
@@ -347,7 +382,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TracksListBox);
+            this.Controls.Add(this.PlaylistsListBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -372,7 +407,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox TracksListBox;
+        private System.Windows.Forms.ListBox PlaylistsListBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.Button button2;
@@ -394,6 +429,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ListBox TracksListBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button6;
     }
 }
 
