@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this._urlTextBox = new System.Windows.Forms.TextBox();
+            this._addTrackButton = new System.Windows.Forms.Button();
             this.PlaylistsListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,6 +51,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this._nowPlayingLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // imageList1
@@ -68,21 +70,22 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Track URL";
             // 
-            // textBox1
+            // _urlTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 460);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(480, 31);
-            this.textBox1.TabIndex = 5;
+            this._urlTextBox.Location = new System.Drawing.Point(131, 460);
+            this._urlTextBox.Name = "_urlTextBox";
+            this._urlTextBox.Size = new System.Drawing.Size(480, 31);
+            this._urlTextBox.TabIndex = 5;
             // 
-            // button1
+            // _addTrackButton
             // 
-            this.button1.Location = new System.Drawing.Point(649, 449);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 46);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this._addTrackButton.Location = new System.Drawing.Point(649, 449);
+            this._addTrackButton.Name = "_addTrackButton";
+            this._addTrackButton.Size = new System.Drawing.Size(82, 46);
+            this._addTrackButton.TabIndex = 6;
+            this._addTrackButton.Text = "Add";
+            this._addTrackButton.UseVisualStyleBackColor = true;
+            this._addTrackButton.Click += new System.EventHandler(this._addTrackButton_Click);
             // 
             // PlaylistsListBox
             // 
@@ -111,6 +114,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Play";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -251,12 +255,31 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.removePlaylistButtonClick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(503, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 25);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Now Playing:";
+            // 
+            // _nowPlayingLabel
+            // 
+            this._nowPlayingLabel.AutoSize = true;
+            this._nowPlayingLabel.Location = new System.Drawing.Point(649, 39);
+            this._nowPlayingLabel.Name = "_nowPlayingLabel";
+            this._nowPlayingLabel.Size = new System.Drawing.Size(0, 25);
+            this._nowPlayingLabel.TabIndex = 35;
+            // 
             // MusixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1013, 580);
+            this.Controls.Add(this._nowPlayingLabel);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label15);
@@ -275,8 +298,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PlaylistsListBox);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this._addTrackButton);
+            this.Controls.Add(this._urlTextBox);
             this.Controls.Add(this.label3);
             this.Name = "MusixForm";
             this.Text = "MusiX";
@@ -289,8 +312,8 @@
         #endregion
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox _urlTextBox;
+        private System.Windows.Forms.Button _addTrackButton;
         private System.Windows.Forms.ListBox PlaylistsListBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
@@ -309,6 +332,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label _nowPlayingLabel;
     }
 }
 

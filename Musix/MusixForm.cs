@@ -200,5 +200,26 @@ namespace Musix
             _playlists.Remove(name);
             UpdatePlaylists();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _nowPlayingLabel.Text = TracksListBox.SelectedItem.ToString();
+            }
+            catch
+            {
+                
+            }
+        }
+
+        private void _addTrackButton_Click(object sender, EventArgs e)
+        {
+            var selected = PlaylistsListBox.SelectedItem.ToString();
+            var list = _playlists[selected];
+            list.Add(new Track(_urlTextBox.Text));
+            //UpdatePlaylists();
+            UpdateTracks(selected);
+        }
     }
 }
