@@ -7,8 +7,10 @@ namespace Musix
     public partial class MusixForm : Form
     {
         private Form _mainForm;
-        private List<List<string>> defaultPlaylist;
-        private Dictionary<string, List<string>> _playlists = new Dictionary<string, List<string>>();
+        private Dictionary<string, List<Track>> _playlists = new Dictionary<string, List<Track>>();
+
+        private Track _selectedMenuItem;
+        private ContextMenuStrip _contextMenuStrip;
 
         public MusixForm(Form mainForm)
         {
@@ -16,7 +18,43 @@ namespace Musix
             InitializeComponent();
             LoadPlaylistsFromFile(null);
             UpdatePlaylists();
+            var delete = new ToolStripMenuItem {Text = "delete"};
+            var edit = new ToolStripMenuItem { Text = "edit" };
+            delete.Click += Delete_Click;
+            edit.Click += Edit_Click;
+            _contextMenuStrip = new ContextMenuStrip();
+            _contextMenuStrip.Items.Add(edit);
+            _contextMenuStrip.Items.Add(delete);
+            TracksListBox.MouseDown += TracksListBox_MouseDown;
         }
+
+        private void TracksListBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Right) return;
+            var index = TracksListBox.IndexFromPoint(e.Location);
+            if (index != ListBox.NoMatches)
+            {
+                _selectedMenuItem = TracksListBox.Items[index] as Track;
+                _contextMenuStrip.Show(Cursor.Position);
+                _contextMenuStrip.Visible = true;
+            }
+            else
+                _contextMenuStrip.Visible = false;
+        }
+
+        private void Edit_Click(object sender, EventArgs e)
+        {
+            var form = new EditTrackForm(this, _selectedMenuItem);
+            form.Show();
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            var name = PlaylistsListBox.SelectedItem.ToString();
+            var track = TracksListBox.SelectedItem as Track;
+            RemoveTrackFromPlaylist(name, track);
+        }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
@@ -50,18 +88,33 @@ namespace Musix
         }
         #endregion
 
-        private void LoadPlaylistsFromFile(string fn)
+        public void RemoveTrackFromPlaylist(string playlist, Track t)
         {
-            var defaultTracks = new List<string>();
-            for (int i = 0; i < 10; i++)
-                defaultTracks.Add("Dummy Track nr." + i.ToString());
-            _playlists["(default)"] = defaultTracks;
+            try
+            {
+                var l = _playlists[playlist];
+                l.Remove(t);
+            }
+            catch
+            {
 
+            }
+            UpdateTracks(playlist);
         }
 
-        public List<string> AddPlaylist(string name)
+        private void LoadPlaylistsFromFile(string fn)
         {
-            var tracksList = new List<string>();
+            var defaultTracks = new List<Track>();
+            for (int i = 0; i < 10; i++)
+            {
+                defaultTracks.Add(new Track("url" + i) { Name = "name" + i, Artist = "artist" + i});
+            }
+            _playlists["(default)"] = defaultTracks;
+        }
+
+        public List<Track> AddPlaylist(string name)
+        {
+            var tracksList = new List<Track>();
             try
             {
                 _playlists.Add(name, tracksList);
@@ -78,7 +131,7 @@ namespace Musix
         {
             try
             {
-                _playlists[playlistName].Add(trackUrl);
+                _playlists[playlistName].Add(new Track(trackUrl));
             }
             catch
             {

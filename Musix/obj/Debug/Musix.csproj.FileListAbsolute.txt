@@ -21,3 +21,17 @@ D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.LoginForm.resources
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.RegisterForm.resources
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.AddPlaylistForm.resources
 D:\_root\programming\uni\MusiX\Musix\Musix\obj\Debug\Musix.MusixForm.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\bin\Debug\Musix.exe.config
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\bin\Debug\Musix.exe
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\bin\Debug\Musix.pdb
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.csprojAssemblyReference.cache
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.AddPlaylistForm.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.MusixForm.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.LoginForm.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.Properties.Resources.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.RegisterForm.resources
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.csproj.GenerateResource.cache
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.csproj.CoreCompileInputs.cache
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.exe
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.pdb
+C:\Users\Valdas Rakutis\Source\Repos\PSI\Musix\obj\Debug\Musix.EditTrackForm.resources

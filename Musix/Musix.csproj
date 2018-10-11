@@ -52,6 +52,12 @@
     <Compile Include="AddPlaylistForm.Designer.cs">
       <DependentUpon>AddPlaylistForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditTrackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTrackForm.Designer.cs">
+      <DependentUpon>EditTrackForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MusixForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,8 +78,12 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Track.cs" />
     <EmbeddedResource Include="AddPlaylistForm.resx">
       <DependentUpon>AddPlaylistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTrackForm.resx">
+      <DependentUpon>EditTrackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusixForm.resx">
       <DependentUpon>MusixForm.cs</DependentUpon>
