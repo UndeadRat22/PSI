@@ -26,6 +26,16 @@ namespace Musix
             _contextMenuStrip.Items.Add(edit);
             _contextMenuStrip.Items.Add(delete);
             TracksListBox.MouseDown += TracksListBox_MouseDown;
+            TracksListBox.SelectedIndexChanged += TracksListBox_SelectedIndexChanged;
+        }
+
+        private void TracksListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selected = TracksListBox.SelectedItem as Track;
+            _albumLabel.Text = selected.Album == null ? "None" : selected.Album;
+            _nameLabel.Text = selected.Name == null ? "None" : selected.Name;
+            _dateLabel.Text = selected.Date == null ? "None" : selected.Date;
+            _artistLabel.Text = selected.Artist == null ? "None" : selected.Artist;
         }
 
         private void TracksListBox_MouseDown(object sender, MouseEventArgs e)
