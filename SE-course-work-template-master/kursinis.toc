@@ -1,0 +1,31 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Įvadas}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Informacija apie projektą}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Programos paskirtis}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Pranašumai ir trūkumai}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.1.}Pranašumai}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.2.}Trūkumai}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Techninės ypatybės}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.}Poskyris}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Poskyris}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai ir išvados}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Santrumpos}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\MakeUppercase {Priedai}}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{1 priedas.\nobreakspace {}Neuroninio tinklo struktūra}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{2 priedas.\nobreakspace {}Eksperimentinio palyginimo rezultatai}{9}
