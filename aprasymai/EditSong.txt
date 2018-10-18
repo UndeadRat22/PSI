@@ -1,0 +1,7 @@
+Tikslas: Pakeisti dainos duomenis
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas pagrindiniame lange mato atnaujintus duomenis.
+
+Scenarijus:
+Nadotojas pasirenka grojaraštį kuriame nori pakeisti dainą. Dešiniu pelės klavišu paspaudus and norimos pakeisti dainos, atsidaro meniu, kuriame vartotojas spaudžia ant """EDIT""" opcijos. Atsidaro langas kuriame vartotojas gali pakeisti dainos duomenis. Pakeitus duomenis jie validuojami. Jeigu duomenys teisingi, duomenys išsaugojami duomenų bazėje ir užsidaro dainos informacijos modifikavimo langas.

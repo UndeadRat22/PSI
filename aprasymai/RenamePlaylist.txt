@@ -1,0 +1,7 @@
+Tikslas: Pakeisti pervadinti grojaraštį.
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas pagrindiniame lange mato pervadintą grojaraštį.
+
+Scenarijus:
+Naudotojas dešiniu pelės klavišu spusteli ant grojaraščio kurį nori pervadinti. Atsidariusiam meniu, pasirenka opciją """RENAME""". Atsidaro langas kuriame vartotojas gali įvesti naują pavadinimą. Su kiekvienu klavišo paspaudimu yra tikrinama ar pavadinimas yra teisingo formato. Įvedus teisingą pavadinimą galima paspausti mygtuką """APPLY""" kuris tiek lokaliai, tiek duomenų bazėje atnaujina grojaraščio pavadinimą. Naudotojas pagrindiniame lange mato pasikeitimus.
