@@ -1,0 +1,7 @@
+Tikslas: Pridėti naują dainą prie grojaraščio
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas pagrindiniame lange mato naują dainą.
+
+Scenarijus:
+Naudotojas pagrindiniame lange įveda dainos URL. Tuo metu validuojama ar iš šio URL galima atsisiųsti medijos failą. Jeigu galima, tada spustelėjus add mygtuką tikrinama ar dabartiniame grojaraštyje tokia daina jau egzistuoja. Jeigu neegzistuoja į duomenų bazę siunčiama užklausa su dainos URL. Jeigu duomenų bazė ieško tokios dainos ir grąžina jos duomenis (Atlikėją, datą, albumą, pavadinimą). Galiausiai atnaujinamos ekrane rodomų dainų sąrašas.

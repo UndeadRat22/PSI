@@ -1,0 +1,8 @@
+Tikslas: Ištrinti dainą
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas pasirinktam grojaraštį nebemato ištrintos dainos.
+
+Scenarijus:
+Nadotojas pasirenka grojaraštį kuriame nori pakeisti dainą. Dešiniu pelės klavišu paspaudus and norimos pakeisti dainos, atsidaro meniu, kuriame vartotojas spaudžia ant """REMOVE""" opcijos. 
+Pasirinktame grojaraštyje ištrinama daina, bei nusiunčiama užklausą į duomenų bazę, kad daina būtų ištrina. Lange nebelieka ištrintos dainos.

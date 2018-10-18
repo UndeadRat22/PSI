@@ -1,0 +1,7 @@
+Tikslas: Paleisti dainą
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas girdi norimą dainą.
+
+Scenarijus:
+Nadotojas pasirenka grojaraštį kuriame yra norima daina, tada pasirenka dainą. Leidžiami spausti Play/Pause mygtukai, paspaudus Play - daina pradeda groti.

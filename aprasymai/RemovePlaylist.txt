@@ -1,0 +1,7 @@
+Tikslas: Ištrinti grojaraštį
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas pagrindiniame lange nebemato ištrinto grojaraščio.
+
+Scenarijus:
+Naudotojas pasirenka norimą ištrinti grojarašį ir paspaudžia """"remove"""" mygtuką. Lokaliai išrinamas grojaraštis ir į duomenų bazę nusiunčiama užklausa kad ištrintų grojaraštį.

@@ -1,0 +1,7 @@
+Tikslas: Sustabdyti grojančią dainą dainą
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą ir girdi grojančią dainą.
+Po: Naudotojas nebegirdi grojančios dainos dainą.
+
+Scenarijus:
+Naudotojas spusteli """"Pause"""" mygtuką. Grojanti daina sustoja.

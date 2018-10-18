@@ -1,0 +1,7 @@
+Tikslas: Atsijungti nuo savo paskyros
+Pirminis agentas: Naudotojas
+Prieš: Naudotojas atsidaręs pagrindinį langą.
+Po: Naudotojas mato prisijungimo langą.
+
+Scenarijus:
+Naudotojas pagrindiniame lange spusteli "Logout" mygtuką. Ištrinama lokaliai išsaugoti vartotojo duomenys kaip playlistai, atsisiųstos dainos. Uždaromas pagrindinis langas ir atidaromas prisijungimo langas.
