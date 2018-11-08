@@ -1,0 +1,57 @@
+############
+#...User...#
+############
+1. Programa turi užregistruoti vartotoją.
+2. Programa turi prijungti vartotoją.
+3. Programa turi padėti vartotojui atgauti pamirštą slaptažodį.
+
+###############
+#...Display...#
+###############
+1. Programa turi atvaizduoti esančius grojaraščius.
+2. Programa turi atvaizduoti grojaraštyje esančius garso takelius.
+3. Programa turi atvaizduoti pasirinkto garso takelio duomenis:
+    3.1. Albumą
+    3.2. Datą
+    3.3. Atlikėją
+    3.4. Pavadinimą
+
+##################
+#..Music_Player..#
+##################
+1. Programa turi groti pasirinktą garso takelį.
+2. Programa turi sustabdyti grojantį garso takelį.
+3. Programa turi pertraukti grojantį garso takelį.
+4. Programa turi praleisti grojamo garso takelio dalį.
+
+#################
+#...Playlists...#
+#################
+1. Programa turi pridėti naują grojaraštį.
+2. Programa turi keisti grojaračio pavadinimą.
+3. Programa turi pridėti dainas prie grojaraščio.
+
+############
+#...song...#
+############
+1. Programa turi leisti keisti dainos duomenis:
+    1.1. Albumą
+    1.2. Datą
+    1.3. Atlikėją
+    1.4. Pavadinimą
+    1.5. URL
+
+################
+#...Database...#
+################
+1. Programa turi siųsti vartotojo grojaraščių atnaujinimus į duomenų bazę.
+    1.1. Grojaraščio Pavadinimą
+    1.2. grojaraštyje esančius garso takelius.
+2. Programa turi atnaujinti vartotojo grojarčio takelius pagal duomenų bazės duomenis.
+3. Programa turi siųsti vartotojo dainų duomenų naujinimus į duomenų bazę.
+    3.1. Albumą
+    3.2. Datą
+    3.3. Atlikėją
+    3.4. Pavadinimą
+    3.5. URL
+4. Programa turi atnaujinti vartotojo dainas pagal duomenų bazės duomenis.
