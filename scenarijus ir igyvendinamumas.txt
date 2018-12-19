@@ -1,0 +1,40 @@
+Esamoji būklė
+    Prieš įdiegiant programų sistemą reikia, kad vartotojas turėtų prieeigą prie interneto ryšio. 
+    Žinoma, bent šiuo metu, dauguma žmonių turi priegą prie interneto, bent jau namuose, o kai kurie - ir mobilų internetą telefone.
+
+Scenarijaus aprašas
+    [Use Case Squence] Diagrama eina čia.
+    
+Priemonės scenarijui įgyvendinti
+    Verslui norint pradėti darbą su sistemą, reikėtų įsigyti arba nuomuotis serverį (Pavyzdžiui Microsoft Azure).
+    Taip pat reikėtų išplatinti pačią aplikaciją vartotojui. Tai galima būtų pasiekti naudojantis specifinės operacinės sistemos tiekėjo parduotuvėmis - Windows10: Microsoft Store, Android - Google Play Store, iOS - Apple store, ir t. t..
+
+
+5.  Sistemos įgyvendinamumo ir teikiamos naudos analizė
+Inovaciniai slenkščiai:
+    ?Čia apie PARSEinimą ką nors reikia įdėt.
+Rizikos
+    Kadangi šios programos naudojimas kažkiek techniškas ( reikia nukopijuoti dainos url) ir gan nepatogus jeigu kopijuojama po vieną dainą o ne grojaraštį, gali tekti ilgai mokytis, kaip naudotis programa.
+    Taipogi, jeigu programos dizainas bus pernelyg sudėtingas - vatotojam bus lengviau tiesiog naudotis jau egzistuojančiais, atskirais servisais, o ne programa.
+    Šias problemas galima spręsti keliais būdais - visų pirma, kuo labiau supaprastinti grafinę sąsają. Visų antra, galima įdiegti pagalbinę programą - naršyklės plėtinį.
+    Naudojimas šiuo plėtiniu turėtų būti kiek įmanoma paprastas - jeigu dabar atidarytame puslapyje aptinkama daina/dainos, vartotojas galėtų pasirinkti kurias nori pridėti į savo grojaraštį. Tokiu būdu apeinamos abi problemos - aplikacijos naudojimas tampa mažiau techniškas, bei galima turėti du pagrindinės grafinės sąsajos langus, iš kurių vienas yra paprastesnis (Be dainos ištraukimo iš URL).
+
+Techninis įgyvendinimas:
+    Programos įgyvendinimas vidutinio sudėtingumo. Panašios programos jau egzistuoja, pavyzdžiui https://ytmp3.cc/. Šis internetinis puslapis leidžia atsisiųsti garso takelius iš https://www.youtube.com/ pagal įvestą URL. Yra dar daug kitų panašių programų, kaip kad visokie naršyklės plėtiniai leidžiantis atsisiųsti garso arba vaizdo dokumentus iš įvairių šaltinių. Tačiau jie visi atsiunčia duomenis lokaliai. Mūsų programų sistemos atvėju tai būtų duomenų srauto perdavimas iš įvairiausių šaltinių. Pagal pavyzdžius matosi, kad tai įgyvendinama, bet nebūtinai lengva - kai kurie naršyklės plėtiniai veikia tik kartais - priklauso nuo to kaip saugomi duomenys.
+
+    Programavimo atžvilgiu lengviausia dalis yra duomenų sinchronizavimas tarp įrenginių ir skirtingų vartotojų, bet duomenų talpinimas duomenų bazėje. Vidutiniškai sunku suoptimizuoti dainos siuntimą į klientinę aplikaciją. Vis dėlto, sunkiausia implementuoti pačius algoritmus kurie tesingai aptiktų norimus išgauti garso takelius - pavyzdžiui norint klausytis garso takelio iš https://www.youtube.com/ reikia visų pirma surasti vaizdius duomenis, tada juos konvertuoti tik į garso duomenis, ir tik tada persiųsti į klientinę aplikaciją.
+
+    Aparatinė įranga tiesiogiai priklauso nuo gaunamų užklausų kieko, tad serverių sistema turi nuolatos būti pritaikoma ateinančiam užklausų skaičiui. Tačiau, kaip minėta ankščiau, nebūtinai serveris turi būti pastatytas nuo nulio, galima naudotis jau esančiais serverių masyvais, kaip kad Microsoft Azure ar IBM Cloud. Šios paslaugos itin tinkamos čia, nes neakivaizdu, kaip greitais kis programos naudojimo populiarumas. Naują serverį pastatyti gana sunku ir trunka laiko, kol naudojantis debesų kompiuterijos paslaugomis, prie paklausos galima prisitaikyti dinamiškai ir iš karto.
+
+5.3 Ekonominis įgyvendinamumas
+    Pagal visus reikalavimus, pradiniam programų sistemos įgyvendinimui, reikėtų apie 28000 - 84000 eurų. Kadangi programų sistemai patogesnis variantas debesų kompiuterijos serveriai, serverių įrengimo kainos nėra. Serverius per mėnėsį, priklausomai nuo apkrovos ir serverių tiekėjo (nurodyti skaičiai yra Microsoft Azure serverių paslaugom) kaina būtų nuo 55 eurų iki 223 eurų per mėnesį už vieną serverio instanciją. Taip pat kainuos licencijos leidžiančios platinti savo aplikaciją per įvairių pardavėju parduotves (Google Play Store, Microsoft Store, t.t.), tačiau, bent kolkas tai, vienetinės įmokos ir nesudarys daugiau kaip 200 eurų. Paskaičiavus, gaunasi nuo 660 iki 2676 eurų už vienam serverio instancijos išlaikymui, metam. Šis skaičius dinamiškai kils arba kris priklausomai nuo paklausos. Taipogi, kadangi puslapiai nulatos naujinimami ir vis atsiranda naujų puslapių, reikėtų turėti komandą programuotojų, kurie pastoviai atnaujintų dainų ieškojimą ar persiuntimą iš šių puslapių. Lietuvoje vidutinė programuotojo alga apie 1100 eurų, o čia pradžiai reikėtų bent . Tad per mėnesį dar papildomai 1100 eurų išlaidų, arba apie 13200 eurų per metus. Viskas turėtų atsipirkti per prenumeravimo kaštus, preliminariai - 2 eurai per mėnesį, bei reklamų, neprenumeruojantiems vartotojams, kuriems rodomų reklamų kiekis taipogi turėtų suteikti didesnį ar lygų už 2 eurų pelną.
+    Apskritai per mėnėsį minimaliai reiktų 1155 eurų išlaidoms.
+
+    Sistema yra šiek tiek rizikinga, nes nėra įtikinamų rinkos tyrimų tokios programos reikalingumui. Tačiau, programų sistemos sukūrimo kaina nėra itin didelė. Skaičiuojant pagal minimalius reikalavimus, reikėtų maždaug 558 vartotojų per mėnesį, kad atsipirktų mėnesinės išlaidos programos eksploatacijai. Skaičiuojant net labai mažus vartotojų skaičius - 1000, programų sistema atsipirktų per 33 - 100mėnesių. Tačiau pažiūrėjus į mėnesinį youtube/soundcloud/spotify lankytojų skaičių, nekyla jokių abejonių kad realistiškesnis variantas yra daugiau kaip 10 tukstančių vartotojų per mėnėsį, tad sistemos eksploatacijai reikėtų apie 2423 eur per mėnėsį, o uždarbis >= 20000. Tokiu atvėju, programa vėliausiai po poros mėnėsių pradėtų generuoti pelną.
+
+
+    [Ten pas juos buvo dar lentelė bet bbž ar reikia]
+
+
+5.4. Juridinis įgyvendinamumas
+    Programų sistema suprojektuota taip, kad nepažeistų „Asmens duomenų apsaugos“ ar kitų Lietuvos Respublikos Konstitucijos įstatymų. Sistemos vykdymui prireiks prisiregistruoti su elektroniniu paštu, kaštus gausime per bankų sistemą, jokių asmeninių duomenų nekaupsime ir nepardavinėsime. Naudosime tik statistinius duomenis, gautus iš sistemos, sistemos naudojimo paplitimui įvertinti.
