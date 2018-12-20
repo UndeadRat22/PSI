@@ -1,0 +1,31 @@
+﻿Dalykinės srities statinė struktūra
+(statinis modelis diagrama)
+	Diagramoje pavaizduota pagrindinės dalykinė srities esybės ir jų tarpusavio ryšiai. Joje programos naudotojas turi prieigą prie muzikos grotuvo, kuris leidžia jam klausytis grojaraščiuose sukauptų dainų, bei naujos dainos pridėjimo programos, kuri leidžia pakeisti grojaraščių sudėtį.
+	
+	Esybės
+		Naudotojas (User) - žmogus, norintis pasinaudoti muzikos klausymosi programa, ir turintis tam reikalingus paskyros duomenis.
+		Daina (Song) - garso takelis, gautas iš nuorodos nurodomo puslapio. Taip pat gali turėti pavadinimą, autorių, sukūrimo datą.
+		Muzikos grotuvas (Music player) - programa, grojanti dainas iš eilės grojarašcių nustatyta tvarka arba naudojo pasirinktą dainą.
+		Dainų pridėjimas (Song addition) - programa, pridedanti į sistemą naują dainą iš nuorodos nurodomo puslapio.
+		Grojaraštis (Playlist) - dainų kolekcija, sudaryta iš specifinių dainų, sudėtų tam tikra tvarka.
+	
+Užduotys 
+?
+
+Užduočių vykdymo scenarijai
+	Naujos dainos pridėjimas į grojaraštį 
+		Naudotojas prisijungia prie sistemos įvesdamas savo prisijungimo duomenis. Sistema juos išsiunčia į duomenų bazę, patikrina ar jie egzistuoja ir grąžina sėkmingo prisijungimo langą. Pagrindiniame lange naudotojas pasirenka norimą grojaraštį, įveda naujos dainos nuorodą į tam skirtą laukelį ir spaudžia "Add song". Dainų pridėjimo programa patikrina nuorodą. Jei nuoroda tinkama, dainų pridėjimo programa gauna dainą ir jos informaciją iš puslapio. Naudotojas mato dainą grojaraštyje.
+	Dainos paleidimas ir sustabdymas 
+		Naudotojas prisijungia prie sistemos įvesdamas savo prisijungimo duomenis. Sistema juos išsiunčia į duomenų bazę, patikrina ar jie egzistuoja ir grąžina sėkmingo prisijungimo langą. Pagrindiniame lange naudotojas pasirenka norimą grojaraštį. Vartotojas pasirenka dainą, arba tiesiog spaudžia dainos paleidimo mygtuką (tuo atveju pasirinkta yra pirma grojarašcio daina). Muzikos grotuvas groja dainą. Vartotojui paspaudus dainos pristabdymo mygtuką, ji yra pristabdoma su galimybe ją ėl paleisti nuo sustabdyto momento. Naudotojui paspaudus dainos sustabdymo mygtuką, daina nustoja groti, ir pasirinkta daina tampa pirma grojaraščio daina.
+
+Dalykinės srities dinaminė struktūra
+	Pagrindinių esybių gyvavimo ciklai
+		Grojaraštis
+			(diagrama)
+			Diagramoje pateikiamas grojaraščio gyvavimo ciklas, prasidedantis jo sukūrimu ir pasibaigiantis jo ištrynimu. Grojaraščio gyvavimo ciklą įtakoja naudotojo vaikla - dainų pridėjimas ir ištrynimas.
+		Daina
+			(diagrama)
+			Diagramoje pateikiamas dainos gyvavimo ciklas. Dainos pagrindinės būsenos priklauso nuo to, ar ji yra pasirinkta naudotojo. Jei ji yra pasirinkta, naudotojo pasirinkimu ji gali būti paleista, sustabdyta, ar ištrinta iš grojaraščio.
+		Dainų pridėjimas
+			(diagrama)
+			Diagramoje pateikiamas dainų pridėjimo programos gyvavimo ciklas. Ši programa yra iškviečiama naudotojui norint pridėti naują dainą į sistemą, ir yra atsakinga už nuorodos patikrinimą, dainos informacijos suradimą nurodytame puslapyje, ir dainos patalpinimą pasirinktame grojaraštyje.
